@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is Programming?",
+    "answer": "Programming is the process of designing and writing instructions (code) for a computer to perform specific tasks. It involves creating software, applications, or systems by giving the computer clear, logical steps to follow using programming languages such as Python, Java, or C++. These instructions can range from simple calculations to complex systems that control everything from websites to video games. At its core, programming is about solving problems through logic, structure, and creativity by telling the computer exactly how to achieve a desired outcome."
+  },
+  {
+    "question": "What is Science?",
+    "answer": "Science is the systematic study of the natural world through observation, experimentation, and analysis. It aims to understand how the universe works by forming hypotheses, testing them, and drawing conclusions based on evidence. Science covers various fields, like physics, biology, chemistry, and astronomy, each focusing on different aspects of the world around us. The ultimate goal is to explain phenomena, make predictions, and improve our understanding, which often leads to technological advancements and better ways to address human challenges."
+  },
+  {
+    "question": "What is JavaScript?",
+    "answer": "JavaScript is a programming language primarily used to create interactive effects within web browsers. It's one of the core technologies of web development, alongside HTML and CSS. JavaScript allows developers to build dynamic and responsive web pages by manipulating elements like text, images, and forms, responding to user interactions in real-time. It can be used for a variety of tasks, such as validating forms, creating animations, handling events (like clicks or hover actions), and fetching data from servers without reloading the page (thanks to AJAX).\n\nJavaScript can be run both on the client-side (in the user's browser) and on the server-side (using environments like Node.js). It's essential for building modern web applications and is supported by all major browsers."
+  },
+  {
+    "question": "What is HTML?",
+    "answer": "HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It defines the layout and structure of web pages by using tags to indicate elements like headings, paragraphs, links, images, tables, and more. HTML forms the backbone of web pages, providing the essential structure, while CSS (Cascading Style Sheets) is used for design and JavaScript adds interactivity. When a browser loads a website, it reads the HTML to display the content in a readable format for users. Essentially, HTML tells the browser how to arrange and display text, images, and other elements on a webpage."
+  },
+  {
+    "question": "History of HTML",
+    "answer": "History of HTML:\n\nHTML was first developed by Tim Berners-Lee in 1989 as part of his creation of the World Wide Web at CERN (European Organization for Nuclear Research). Berners-Lee proposed HTML as a way to enable researchers to easily share documents over the internet, using hyperlinks to connect various pieces of information. The first version of HTML was quite simple, consisting mainly of basic tags to structure documents and create links.\n\nIn 1991, the first webpage was published, marking the beginning of the web's public availability. HTML rapidly evolved, with new versions released over the years to accommodate the growing complexity of websites. In 1995, HTML 2.0 was officially standardized by the Internet Engineering Task Force (IETF), offering more consistency across browsers.\n\nSubsequent versions, including HTML 3.2 (1997), HTML 4.01 (1999), and XHTML (2000), introduced more features for multimedia, forms, and web accessibility. In 2014, the HTML5 specification was finalized by the World Wide Web Consortium (W3C), bringing major improvements such as better support for audio and video, local storage, canvas graphics, and new semantic elements, making it the most advanced and widely used version today.\n\nHTML continues to evolve with the ongoing work of the W3C and web developers, aiming to improve the structure, accessibility, and functionality of the web."
+  },
+  {
+    "question": "Who is Tim Berners-Lee?",
+    "answer": "Tim Berners-Lee is a British computer scientist best known for inventing the World Wide Web in 1989 while working at CERN, the European Organization for Nuclear Research. His groundbreaking idea was to create a system that would allow researchers to share documents and data across the internet using hyperlinks. This vision led to the development of HTML (HyperText Markup Language), HTTP (HyperText Transfer Protocol), and the URL (Uniform Resource Locator) system, which are the foundational technologies that drive the web today.\n\nBerners-Lee's invention revolutionized communication and access to information, fundamentally changing how people interact with technology, conduct business, and share knowledge. In addition to creating the World Wide Web, he also founded the World Wide Web Consortium (W3C) in 1994, an organization that oversees web standards and ensures the web remains open and accessible to all.\n\nBerners-Lee has received numerous honors for his contributions, including being knighted by Queen Elizabeth II in 2004 and being awarded the Turing Award in 2016. He remains an advocate for net neutrality, privacy, and the ethical use of technology."
+  },
+  {
+    "question": "Who is the father of JavaScript?",
+    "answer": "The \"father of JavaScript\" is Brendan Eich, an American software engineer who created the language in 1995 while working at Netscape Communications. Eich developed JavaScript in just 10 days, intending it to be a lightweight scripting language that could make web pages more dynamic and interactive. Initially, it was called Mocha, then LiveScript, before finally being renamed JavaScript to leverage the popularity of Java, though the two languages are quite different.\n\nJavaScript quickly became a core technology of web development, alongside HTML and CSS, and has since grown into a powerful and versatile language that can be used for both client-side (in the browser) and server-side (with environments like Node.js) programming. Brendan Eich’s rapid development of JavaScript helped shape the modern internet, making interactive, user-friendly websites possible."
+  },
+  {
+    "question": "What is Computer Science?",
+    "answer": "Computer Science is the study of computers and computational systems, focusing on understanding and designing software, hardware, algorithms, and information processing. It involves exploring how data is structured, how to develop efficient algorithms to solve complex problems, and how to create software that can perform a variety of tasks across different platforms.\n\nThe field encompasses various areas, including programming, data structures, algorithms, artificial intelligence, machine learning, computer graphics, networking, databases, and cybersecurity. Computer scientists aim to create technology that can process, store, communicate, and analyze information in efficient and innovative ways.\n\nHistorically, computer science emerged as a formal discipline in the 1940s and 1950s with the invention of digital computers. Early pioneers like Alan Turing, who developed the concept of a \"universal machine\" (the theoretical basis for modern computers), and John von Neumann, who proposed the stored-program concept, laid foundational principles for the field. Since then, computer science has grown rapidly and continues to drive advancements in fields ranging from healthcare and education to entertainment and artificial intelligence."
+  },
+  {
+    "question": "What is Social Science?",
+    "answer": "Social science is the study of human society, relationships, and behavior. It aims to understand how people interact with one another, how societies are structured, and how cultural, economic, political, and social forces shape our world. Social science uses both qualitative and quantitative research methods to examine aspects of human life, seeking to uncover patterns, establish theories, and offer insights into complex social issues."
+  },
+  {
+    "question": "What is Natural Science?",
+    "answer": "Natural science is the branch of science that studies the physical world and the laws of nature. It seeks to understand the universe's fundamental principles through observation, experimentation, and empirical evidence. Natural sciences focus on discovering how the natural world works, from the tiniest particles to the vastness of space, and rely on rigorous testing and scientific methods to explain and predict phenomena."
+  },
+  {
+    "question": "What is Political Science?",
+    "answer": "Political science is the study of politics, government systems, and political behavior. It examines how power is distributed and exercised within societies, how laws are made, how governments operate, and how political decisions affect people and societies. Political scientists seek to understand how political institutions function, how political ideas and ideologies shape society, and how citizens interact with and influence their governments."
+  },
+  {
+    "question": "What is Biological Science?",
+    "answer": "Biological science, also known as biology, is the study of living organisms and life processes. It explores the structure, function, growth, origin, evolution, and interactions of living things, from microscopic cells to complex ecosystems. Biological sciences cover a wide range of life forms, including plants, animals, humans, and microorganisms, and study their interactions within environments."
+  },
+  {
+    "question": "What is Earth Science?",
+    "answer": "Earth science is the study of the Earth and its processes, structures, and natural systems. It seeks to understand the physical aspects of our planet, including its atmosphere, oceans, landforms, and the interactions between these elements. Earth science is essential for understanding natural phenomena, predicting environmental changes, and managing natural resources."
+  },
+  {
+    "question": "What is Python?",
+    "answer": "Python is a high-level, versatile programming language known for its simplicity and readability. Created by Guido van Rossum and first released in 1991, Python is designed to emphasize code readability, allowing developers to write clear and logical code for both small and large projects.\n\nPython supports multiple programming paradigms, including procedural, object-oriented, and functional programming. This flexibility makes it widely used in various domains, including web development, data science, machine learning, artificial intelligence, automation, scientific computing, and more."
+  },
+  {
+    "question": "Hello",
+    "answer": "How can I assist you today?"
+  }
+]
