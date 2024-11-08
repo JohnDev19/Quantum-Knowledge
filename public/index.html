@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Knowledge</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48cGF0aCBkPSJNMTAgMEwgMTAgMTAwIFoiIGZpbGw9IndoaXRlIiAvPjwvc3ZnPg==" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Explore the Quantum Knowledge API for a collection of contents">
+    <meta name="keywords" content="Quantum, API, Knowledge Base">
+    <meta name="author" content="JohnDev19">
+    <meta property="og:title" content="Quantum Knowledge">
+    <meta property="og:description" content="Explore the Quantum Knowledge API for a collection of contents">
+    <meta property="og:image" content="https://i.ibb.co/3ST4BTV/IMG-20241108-155035.jpg">
+    <meta property="og:type" content="website">
+</head>
+</head>
+<body>
+  <div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="navbar-brand">
+        <i class="fas fa-brain"></i> Quantum Knowledge
+    </div>
+    <div class="nav-links" id="menu">
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="#ask"><i class="fas fa-question-circle"></i> Ask</a>
+        <a href="#home"><i class="fas fa-search"></i> Search</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Quantum Knowledge Explorer</h1>
+    <p>Unlock the power of intelligent knowledge sharing</p>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Ask a question...">
+        <button onclick="performSearch()">
+            <i class="fas fa-search"></i> Search
+        </button>
+    </div>
+</section>
+
+<section class="results-section">
+    <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+    <div id="errorMessage" class="error-message" style="display: none;"></div>
+    <div id="resultsContainer" class="results-container">
+    </div>
+</section>
+
+<section class="question-section" id="ask">
+    <div class="question-form">
+        <h2>Submit Your Content</h2>
+        <br>
+        <form id="questionForm">
+            <div class="form-group">
+                <input type="text" id="questionTitle" placeholder="Content Title" required>
+            </div>
+            <div class="form-group">
+                <textarea id="questionDescription" placeholder="Provide more details" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</section>
+
+<section id="api-docs" style="padding: 50px 0; background: var(--bg-secondary); color: var(--text-primary); width: 100%;">
+    <div style="max-width: 1200px; margin: auto; padding: 0 20px;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">API Documentation</h2>
+        <p style="margin-bottom: 30px; line-height: 1.6;">The Quantum Knowledge API provides an interface for interacting with a collection of data comprising questions and answers. This API allows users to search for specific topics and contribute new knowledge to the community.</p>
+
+        <h3 style="font-size: 2rem; margin-bottom: 15px;">Search API</h3>
+        <p style="margin-bottom: 15px; line-height: 1.6;">This API allows users to search for questions and answers based on a keyword, making it easier to find relevant information quickly.</p>
+        
+        <h4 style="margin-bottom: 10px;">Endpoint</h4>
+        <pre style="background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; color: var(--text-primary); white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px;">
+<code>GET /api/search?q={keyword}</code></pre>
+        
+        <h4 style="margin-bottom: 10px;">Parameters</h4>
+        <ul style="margin-bottom: 15px; padding-left: 20px;">
+            <li><strong>q</strong> (required): The keyword to search for in the questions.</li>
+        </ul>
+        
+        <h4 style="margin-bottom: 10px;">Response</h4>
+        <p style="margin-bottom: 15px; line-height: 1.6;">The API returns a JSON array of search results. Each result contains:</p>
+        <ul style="margin-bottom: 15px; padding-left: 20px;">
+            <li><strong>question</strong>: The title of the question.</li>
+            <li><strong>answer</strong>: The answer to the question.</li>
+        </ul>
+        
+        <h4 style="margin-bottom: 10px;">Example Request</h4>
+        <pre style="background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; color: var(--text-primary); white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px;">
+<code>GET /api/search?q=quantum</code></pre>
+        
+        <h4 style="margin-bottom: 10px;">Example Response</h4>
+        <pre style="background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; color: var(--text-primary); white-space: pre-wrap; word-wrap: break-word; margin-bottom: 15px;">
+<code>
+[
+    {
+        "question": "What is quantum entanglement?",
+        "answer": "Quantum entanglement is a physical phenomenon that occurs when pairs or groups of particles interact in such a way that the quantum state of each particle cannot be described independently of the others."
+    },
+    ...
+]
+</code></pre>
+
+        <h3 style="font-size: 2rem; margin-bottom: 15px;">Submit Content (Question/Answer)</h3>
+        <p style="margin-bottom: 15px; line-height: 1.6;">To contribute to the Quantum Knowledge API, users can submit new questions and answers using the form above. This allows for the continuous growth of the knowledge base and encourages community participation.</p>
+        
+        <h4 style="margin-bottom: 10px;">Form Fields</h4>
+        <ul style="margin-bottom: 15px; padding-left: 20px;">
+            <li><strong>Content Title</strong>: Enter the content you want to submit.</li>
+            <li><strong>Answer</strong>: Provide detailed information.</li>
+        </ul>
+        
+        <h4 style="margin-bottom: 10px;">Submission Guidelines</h4>
+        <p style="margin-bottom: 15px; line-height: 1.6;">When submitting a question and answer, please ensure that the content is clear, accurate, and relevant to quantum mechanics. This will help maintain the quality of information available to all users.</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Quantum Knowledge. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61551205372198" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
