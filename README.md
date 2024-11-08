@@ -1,4 +1,4 @@
-# Q&A API
+# Quantum Knowledge API
 
 A simple Express.js API that allows users to create, retrieve, and search for contents. Users can provide their own content, making it flexible for many topics.
 
